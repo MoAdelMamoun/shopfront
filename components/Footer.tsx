@@ -46,9 +46,9 @@ export default function Footer() {
 
       <div className="border-t border-stone-200">
         <div className="mx-auto flex max-w-content flex-col gap-2 px-4 py-5 text-xs text-stone-500 sm:flex-row sm:items-center sm:justify-between">
-          <span>© 2026 {site.name} (demo). Sample data — not a real store.</span>
+          <span>© 2026 {site.name}. Showcase project · sample data.</span>
           <span>
-            A portfolio demo by{' '}
+            A showcase project by{' '}
             <a href="https://mohamedadelmamoun.com" className="text-brand-700 underline" target="_blank" rel="noopener noreferrer">
               Mohamed Adel Mamoun
             </a>

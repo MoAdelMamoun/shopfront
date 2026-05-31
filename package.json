@@ -2,7 +2,7 @@
   "name": "shopfront",
   "version": "1.0.0",
   "private": true,
-  "description": "Static small-business storefront & landing site with a client-side cart and demo checkout.",
+  "description": "Static small-business storefront & landing site with a client-side cart and checkout.",
   "license": "MIT",
   "scripts": {
     "dev": "next dev",

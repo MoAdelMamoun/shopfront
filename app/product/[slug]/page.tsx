@@ -69,7 +69,7 @@ export default async function ProductPage({ params }: { params: Promise<{ slug: 
           </div>
 
           <p className="mt-4 text-xs text-stone-400">
-            Demo only — adding to cart and checking out never charges a card or places a real order.
+            Adding to cart and checking out never charges a card or places a real order.
           </p>
         </div>
       </div>

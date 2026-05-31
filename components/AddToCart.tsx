@@ -46,7 +46,7 @@ export default function AddToCart({ item }: { item: CatalogItem }) {
       >
         {added ? 'Added ✓' : isService ? 'Add booking to cart' : 'Add to cart'}
       </button>
-      {isService && <span className="text-xs text-stone-500">Demo booking — confirmed at checkout</span>}
+      {isService && <span className="text-xs text-stone-500">Booking confirmed at checkout</span>}
     </div>
   );
 }

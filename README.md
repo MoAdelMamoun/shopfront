@@ -1,15 +1,15 @@
 # ShopFront — Small Business Storefront & Landing Site
 
-> A polished, fully responsive storefront and landing site for a small business — filterable product **and** service catalog, product pages, a client‑side cart, and a demo checkout — shipped as a **100% static site** that runs with **zero config**.
+> A polished, fully responsive storefront and landing site for a small business — filterable product **and** service catalog, product pages, a client‑side cart, and checkout — shipped as a **100% static site** that runs with **zero config**.
 
 [![Static site](https://img.shields.io/badge/site-static-2f6f4e)](#deploy)
 [![Next.js](https://img.shields.io/badge/Next.js-15-000000)](https://nextjs.org)
 [![TypeScript](https://img.shields.io/badge/TypeScript-strict-3178c6)](https://www.typescriptlang.org)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](./LICENSE)
 
-ShopFront proves the **Websites, Landing Pages & E‑commerce** service area: a real, complete, working storefront a small business could actually launch. It’s intentionally backend‑free, so the live demo stays up with **zero maintenance and zero running cost**.
+ShopFront proves the **Websites, Landing Pages & E‑commerce** service area: a real, complete, working storefront a small business could actually launch. It’s intentionally backend‑free, so the live site stays up with **zero maintenance and zero running cost**.
 
-> **Demo store.** All products, prices, reviews and contact details are obviously fictional sample data. Nothing is for sale; checkout never charges a card or places a real order.
+> **Showcase project.** All products, prices, reviews and contact details are fictional sample data. Nothing is for sale; checkout never charges a card or places a real order.
 
 ---
 
@@ -23,7 +23,7 @@ ShopFront proves the **Websites, Landing Pages & E‑commerce** service area: a 
 | --- | --- |
 | ![Product](docs/screenshots/product.png) | ![Cart](docs/screenshots/cart.png) |
 
-| Demo checkout | Demo contact |
+| Checkout | Contact |
 | --- | --- |
 | ![Checkout](docs/screenshots/checkout.png) | ![Contact](docs/screenshots/contact.png) |
 
@@ -31,15 +31,15 @@ ShopFront proves the **Websites, Landing Pages & E‑commerce** service area: a 
 
 ## Features
 
-- **Landing page** — hero, category collage, feature strip, featured products, services callout, testimonials and a (demo) newsletter.
+- **Landing page** — hero, category collage, feature strip, featured products, services callout, testimonials and a newsletter.
 - **Filterable catalog** — live client‑side **search**, **category filter** and **sort** (featured / price / rating). Deep‑linkable by category (`/catalog?category=Services`).
 - **Products _and_ services** — bookable services (gift wrapping, styling consult, workshop) live in the same catalog, cart and checkout as physical products.
 - **Product detail pages** — one statically‑generated page per item, with details, rating, related products and add‑to‑cart.
 - **Client‑side cart** — add / remove / change quantity, live subtotal and a header badge, persisted in `localStorage` so it survives refreshes.
-- **Demo checkout** — contact + shipping form → order summary → confirmation with an order number. **No payment, no network, no real order.**
-- **Demo contact form** — client‑side only, clearly labelled, with a friendly confirmation.
+- **Checkout** — contact + shipping form → order summary → confirmation with an order number. **No payment, no network, no real order.**
+- **Contact form** — client‑side only, with a friendly confirmation.
 - **Responsive & accessible** — mobile‑first, keyboard‑friendly, semantic markup, no layout shift.
-- **No image assets** — product artwork is generated inline (SVG gradients), so the repo stays light and the demo needs no media pipeline.
+- **No image assets** — product artwork is generated inline (SVG gradients), so the repo stays light and it needs no media pipeline.
 
 ## Tech stack
 
@@ -69,7 +69,7 @@ Other scripts: `npm run typecheck`, `npm run lint`.
 
 ## Configuration
 
-ShopFront needs **no configuration to run**. Optionally re‑brand the demo by copying `.env.example` → `.env.local`:
+ShopFront needs **no configuration to run**. Optionally re‑brand it by copying `.env.example` → `.env.local`:
 
 | Variable | Purpose | Default |
 | --- | --- | --- |
@@ -79,13 +79,13 @@ ShopFront needs **no configuration to run**. Optionally re‑brand the demo by c
 
 Catalog content lives in `data/catalog.ts` and store copy in `data/site.ts` — edit those to make it your own.
 
-## Demo Mode
+## Sample data & forms
 
-**The default mode _is_ demo mode — it runs with zero config and no keys.**
+**It runs with zero config and no keys.**
 
 - The catalog, prices, reviews and content are **bundled sample data** (`data/catalog.ts`).
 - The cart works entirely in the browser (`localStorage`).
-- **Checkout and the contact/newsletter forms are demos**: they show a confirmation only. Nothing is sent, stored on a server, or charged. A persistent banner makes this clear on every page.
+- **Checkout and the contact/newsletter forms are illustrative**: they show a confirmation only. Nothing is sent, stored on a server, or charged.
 
 That means the live build is safe to host publicly forever — there’s nothing to break, no secrets to leak, and no costs to run.
 
@@ -101,7 +101,7 @@ npm run build        # produces ./out
 - **GitHub Pages** — push `out/` to a `gh-pages` branch (or use an action). For a **project page** served under `/<repo>`, set `NEXT_PUBLIC_BASE_PATH=/shopfront` before building.
 - **Any static host / S3 / nginx** — upload the contents of `out/`.
 
-No server, no database, no scheduled jobs — once deployed, the demo stays up with zero maintenance.
+No server, no database, no scheduled jobs — once deployed, the site stays up with zero maintenance.
 
 ## Author
 

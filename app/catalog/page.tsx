@@ -12,7 +12,7 @@ export default function CatalogPage() {
       <header className="mb-8">
         <h1 className="text-3xl font-semibold text-ink">Catalog</h1>
         <p className="mt-2 max-w-xl text-stone-500">
-          Everything in the (demo) shop — products and bookable services, all in one place.
+          Everything in the shop — products and bookable services, all in one place.
         </p>
       </header>
       <CatalogBrowser />

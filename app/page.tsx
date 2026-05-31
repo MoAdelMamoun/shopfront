@@ -149,7 +149,7 @@ export default function HomePage() {
 
       {/* Testimonials */}
       <section className="mx-auto max-w-content px-4 py-14">
-        <h2 className="text-2xl font-semibold text-ink">What (demo) customers say</h2>
+        <h2 className="text-2xl font-semibold text-ink">What customers say</h2>
         <div className="mt-6 grid gap-5 md:grid-cols-3">
           {testimonials.map((t) => (
             <figure key={t.name} className="rounded-2xl border border-stone-200 bg-white p-6">

@@ -82,7 +82,7 @@ export default function CartPage() {
               </div>
               <div className="flex justify-between">
                 <dt className="text-stone-500">Shipping</dt>
-                <dd className="text-sage-700">Free (demo)</dd>
+                <dd className="text-sage-700">Free</dd>
               </div>
               <div className="flex justify-between border-t border-stone-200 pt-3 text-base font-semibold">
                 <dt>Total</dt>
@@ -95,7 +95,7 @@ export default function CartPage() {
             >
               Checkout
             </Link>
-            <p className="mt-3 text-center text-xs text-stone-400">Demo checkout — no payment is taken.</p>
+            <p className="mt-3 text-center text-xs text-stone-400">No payment is taken at checkout.</p>
           </aside>
         </div>
       )}

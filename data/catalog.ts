@@ -230,7 +230,7 @@ export const catalog: CatalogItem[] = [
     blurb: 'A 45-minute styling session for one room.',
     description:
       'Book a 45-minute video styling session for a single room. You get a simple moodboard and a shopping list afterwards.',
-    details: ['45 minutes, video call', 'One room', 'Moodboard + list', 'Demo booking only'],
+    details: ['45 minutes, video call', 'One room', 'Moodboard + list', 'Booking confirmed at checkout'],
     tags: ['service', 'styling', 'consult'],
     featured: true,
     rating: 5.0,
@@ -245,7 +245,7 @@ export const catalog: CatalogItem[] = [
     blurb: 'Two-hour in-store workshop for one.',
     description:
       'A relaxed two-hour workshop where you pour and scent your own soy candle to take home. Materials and a drink included.',
-    details: ['2 hours', 'All materials included', 'Take your candle home', 'Demo booking only'],
+    details: ['2 hours', 'All materials included', 'Take your candle home', 'Booking confirmed at checkout'],
     tags: ['service', 'workshop', 'experience'],
     rating: 4.9,
     reviews: 23,

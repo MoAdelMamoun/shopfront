@@ -20,8 +20,8 @@ export default function CheckoutPage() {
 
   function placeOrder(e: React.FormEvent) {
     e.preventDefault();
-    // Demo-only: build a confirmation, clear the cart. No payment, no network.
-    const order = 'DEMO-' + Math.random().toString(36).slice(2, 7).toUpperCase();
+    // Build a confirmation, clear the cart. No payment, no network.
+    const order = 'ORD-' + Math.random().toString(36).slice(2, 7).toUpperCase();
     setPlaced({
       order,
       total: subtotal,
@@ -41,7 +41,7 @@ export default function CheckoutPage() {
         <h1 className="mt-5 text-3xl font-semibold text-ink">Order confirmed</h1>
         <p className="mt-2 text-stone-500">
           Order <span className="font-mono text-ink">{placed.order}</span>
-          {placed.email ? <> · a (pretend) receipt would go to {placed.email}</> : null}
+          {placed.email ? <> · a receipt would go to {placed.email}</> : null}
         </p>
 
         <div className="mt-8 rounded-2xl border border-stone-200 bg-white p-6 text-left">
@@ -62,7 +62,7 @@ export default function CheckoutPage() {
         </div>
 
         <p className="mx-auto mt-6 max-w-md rounded-xl bg-brand-50 px-4 py-3 text-sm text-brand-800">
-          This is a demo storefront — <strong>no payment was taken and no order was placed.</strong>
+          <strong>No payment was taken and no order was placed.</strong>
         </p>
 
         <Link
@@ -94,7 +94,7 @@ export default function CheckoutPage() {
     <div className="mx-auto max-w-content px-4 py-12">
       <h1 className="text-3xl font-semibold text-ink">Checkout</h1>
       <p className="mt-2 text-sm text-stone-500">
-        This is a demo checkout. Submitting shows a confirmation only — no card is charged and no data leaves your browser.
+        Submitting shows a confirmation only — no card is charged and no data leaves your browser.
       </p>
 
       <form onSubmit={placeOrder} className="mt-8 grid gap-8 lg:grid-cols-3">
@@ -116,7 +116,7 @@ export default function CheckoutPage() {
           </fieldset>
 
           <fieldset className="rounded-2xl border border-stone-200 bg-white p-6">
-            <legend className="px-2 text-sm font-semibold text-ink">Shipping address (demo)</legend>
+            <legend className="px-2 text-sm font-semibold text-ink">Shipping address</legend>
             <div className="grid gap-4 sm:grid-cols-2">
               <Field label="Address" name="address" autoComplete="address-line1" required className="sm:col-span-2" />
               <Field label="City" name="city" autoComplete="address-level2" required />
@@ -145,7 +145,7 @@ export default function CheckoutPage() {
             type="submit"
             className="mt-5 w-full rounded-full bg-brand-600 px-6 py-3 text-sm font-medium text-cream hover:bg-brand-700"
           >
-            Place demo order
+            Place order
           </button>
         </aside>
       </form>

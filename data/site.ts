@@ -24,7 +24,7 @@ export const hero = {
 
 export const features = [
   { icon: 'leaf', title: 'Small-batch & natural', body: 'Made in small runs from natural materials — no mass production.' },
-  { icon: 'truck', title: 'Free local pickup', body: 'Order online and collect from the (pretend) Harbor Town shop.' },
+  { icon: 'truck', title: 'Free local pickup', body: 'Order online and collect from the Harbor Town shop.' },
   { icon: 'heart', title: 'Lifetime care', body: 'Every piece comes with simple care notes so it lasts for years.' },
   { icon: 'shield', title: 'Easy 30-day returns', body: 'Changed your mind? Send it back within 30 days, no fuss.' },
 ];
@@ -33,17 +33,17 @@ export const testimonials = [
   {
     quote: 'The linen throw is the softest thing in our house. The whole site made checkout effortless.',
     name: 'Sample Customer A',
-    detail: 'Demo review',
+    detail: 'Sample review',
   },
   {
     quote: 'Booked a styling consult and ordered a few pieces in one go. Lovely little shop.',
     name: 'Sample Customer B',
-    detail: 'Demo review',
+    detail: 'Sample review',
   },
   {
     quote: 'Beautiful candles and the gift wrapping service is a nice touch for last-minute presents.',
     name: 'Sample Customer C',
-    detail: 'Demo review',
+    detail: 'Sample review',
   },
 ];
 

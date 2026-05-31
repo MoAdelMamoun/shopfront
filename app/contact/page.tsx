@@ -11,7 +11,7 @@ export default function ContactPage() {
     <div className="mx-auto max-w-content px-4 py-12">
       <h1 className="text-3xl font-semibold text-ink">Contact us</h1>
       <p className="mt-2 max-w-xl text-stone-500">
-        Questions about an order or a service? Send a note below. This is a demo form — it doesn’t actually send
+        Questions about an order or a service? Send a note below. This form doesn’t actually send
         anything or store your message.
       </p>
 
@@ -40,7 +40,7 @@ export default function ContactPage() {
               </div>
               <h2 className="mt-4 text-xl font-semibold text-ink">Thanks for reaching out</h2>
               <p className="mt-2 text-sm text-stone-600">
-                This is a demo — your message wasn’t actually sent or stored anywhere.
+                Your message wasn’t actually sent or stored anywhere.
               </p>
               <button
                 type="button"
@@ -89,7 +89,7 @@ export default function ContactPage() {
                 type="submit"
                 className="mt-5 rounded-full bg-brand-600 px-6 py-3 text-sm font-medium text-cream hover:bg-brand-700"
               >
-                Send message (demo)
+                Send message
               </button>
             </form>
           )}
